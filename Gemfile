@@ -9,7 +9,6 @@ group :production do
   gem 'pg', '0.12.2'
 end
 
-gem 'sqlite3'
 gem 'haml'
 
 # Gems used only for assets and not required
