@@ -17,8 +17,13 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier', '>= 0.3'
 end
+
+group :production do
+  gem 'pg', '0.12.2'
+end
+
 
 gem 'jquery-rails'
 gem 'sqlite3', group: :development
