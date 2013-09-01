@@ -1,0 +1,10 @@
+%nav
+  %ul
+    %li
+      %a{ href: '/', class: request.fullpath == '/' && 'active'} Главная
+    %li
+      %a{ href: 'shop', class: request.fullpath == '/shop' && 'active'} Продажа ингридиентов
+    %li
+      %a{ href: 'dostavka', class: request.fullpath == '/dostavka' && 'active'} Доставка
+    %li
+      %a{ href: 'company', class: request.fullpath == '/company' && 'active'} О компании

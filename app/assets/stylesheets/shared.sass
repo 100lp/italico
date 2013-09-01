@@ -1,0 +1,211 @@
+.group
+  zoom: 1 /* IE6&7 */
+
+  &:before, &:after
+    content: ""
+    display: table
+
+  &:after
+    clear: both
+
+body
+  background: #e5e2cc
+  section
+    width: 930px
+    margin-left: auto
+    margin-right: auto
+    margin-top: 20px
+
+    a
+      text-align: left
+      text-decoration: none
+      color: #4D3F2D
+      font-size: 24px
+      float: left
+      margin-bottom: 5px
+
+      &:hover
+        color: #786c60
+
+
+    p
+      float: right
+      padding: 8px 0 0
+      margin: 0
+      font-family: arial
+      color: #786c60
+
+    header
+      height: 331px
+      padding: 0
+      background: image-url('header.jpg') no-repeat center top #8c7147
+      margin: 10px 0
+      clear: both
+      +box-shadow(0 1px 2px #333)
+
+    nav
+      +background-image(linear-gradient(#70421C, #AA6537))
+      font-size: 18px
+      height: 22px
+      line-height: 22px
+      padding: 8px 0
+      text-align: center
+      margin: 0
+      position: relative
+      +box-shadow(0 1px 2px #333)
+
+      ul
+        margin: 0
+        padding: 0
+
+        li
+          margin-left: 95px
+          display: inline-block
+          color: #4D3F2D
+
+          &:hover
+            color: #333
+
+          &:first-child
+            margin: 0
+
+          a
+            font-size: 16px
+            font-family: arial
+            color: white
+
+            &:hover
+              +transition-duration(0.4s)
+              +transition-timing-function(ease-in)
+              +text-shadow(0px 0px 6px #fffddd)
+              color: white
+
+          a.active
+            +text-shadow(0px 0px 6px #fffddd)
+
+        li.active
+          a
+            color: $link-hover-color
+
+    #main
+      margin-bottom: 15px
+      text-align: left
+      background: #fff
+      padding: 20px
+      +box-shadow(0 2px 2px #888888)
+
+      h1
+        font-size: 20px
+        margin: 0
+        padding: 0
+        font-family: arial
+        margin-bottom: 10px
+        color: #4D3F2D
+
+      #content
+        p
+          float: none
+          padding: 0
+          text-align: justify
+          margin-bottom: 10px
+
+        img
+          float: right
+          max-width: 350px
+          margin-left: 15px
+
+        #products
+          text-align: center
+
+          div
+            display: inline-block
+            max-width: 300px
+            text-align: left
+
+            &:nth-child(2)
+              margin: 0 17px
+
+            a
+              float: none
+              display: block
+
+              img
+                max-width: 280px
+                border: 1px solid #ddd
+                display: block
+                clear: both
+                float: none
+                margin: 0
+
+                &:hover
+                  border: 1px solid #786C60
+
+            .name, .price
+              color: #4D3F2D
+              text-decoration: underline
+              font-size: 18px
+
+            .name
+              float: left
+
+            .price
+              float: right
+
+            table
+              width: 100%
+              margin-bottom: 10px
+
+              &:hover
+                +box-shadow(1px 2px 2px #777)
+                td
+                  &:first-child
+                    color: #333
+                  &:last-child
+                    color: #4D3F2D
+              tr
+                td
+                  padding: 0
+                  font-size: 12px
+
+                  &:first-child
+                    text-align: left
+                    font-weight: bold
+                    color: #4D3F2D
+
+                  &:last-child
+                    text-align: right
+                    color: #786C60
+
+            #coffee_beans
+              display: block
+              a
+                display: inline-block
+                float: none
+                margin: 0
+                padding: 0
+                border: none
+
+                img
+                  margin: 0
+                  padding: 0
+                  float: none
+                  width: 135px
+                  border: 1px solid #ddd
+                  opacity: 0.6
+
+                  &:hover
+                    opacity: 1
+                    border: 1px solid #ddd
+    #footer
+      margin-bottom: 25px
+      height: 50px
+      a
+        float: left
+        font-size: 22px
+
+      p
+        float: right
+        text-align: right
+        padding: 0
+
+

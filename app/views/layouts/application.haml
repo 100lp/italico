@@ -1,0 +1,28 @@
+!!!
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8" lang="en">
+/[if IE 8] <html class="no-js lt-ie9" lang="en">
+/ [if gt IE 8]><!
+%html
+  / <![endif]
+  %head
+    %meta{ charset: 'utf-8' }
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
+
+    %title Coffee Italico
+    = stylesheet_link_tag 'application', media: 'all'
+    / = javascript_include_tag 'vendor/custom.modernizr'
+    = csrf_meta_tags
+
+  %body
+    %section
+      = link_to root_url, class: 'home' do
+        CoffeeItalico
+      %p Санкт-Петербург, (812) 756-20-26
+      %header
+      = render 'shared/nav'
+      #main
+        #content
+          = yield
+      = render 'shared/footer'
+  = javascript_include_tag 'application'

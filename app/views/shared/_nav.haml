@@ -1,0 +1,12 @@
+%nav
+  %ul
+    %li
+      %a{ href: '/', class: request.fullpath == '/' && 'active'} Кофе
+    %li
+      %a{ href: 'tea', class: request.fullpath == '/tea' && 'active'} Чай
+    %li
+      %a{ href: 'shop', class: request.fullpath == '/shop' && 'active'} Ингридиенты/Аксессуары
+    %li
+      %a{ href: 'dostavka', class: request.fullpath == '/dostavka' && 'active'} Доставка
+    %li
+      %a{ href: 'company', class: request.fullpath == '/company' && 'active'} О компании
