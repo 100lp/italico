@@ -1,1 +1,18 @@
-%h1 Магазин
+%h1 Продажа аксессуаров и ингридиентов для кофейных автоматов и кофемашин
+#shop
+  %div
+    %h2 Стаканы
+    %a.highslide{:href => "assets/shop_stakanchiki.jpg", :onclick => "return hs.expand(this, { slideshowGroup: 'gallery01' } )"}
+      =image_tag 'shop_stakanchiki.jpg', title: 'Увеличить изображение', alt: 'стаканчики для вендинга'
+  %div
+    %h2 Размешиватели(палочки)
+    %a.highslide{:href => "assets/shop_palochki.jpg", :onclick => "return hs.expand(this, { slideshowGroup: 'gallery01' } )"}
+      =image_tag 'shop_palochki.jpg', title: 'Увеличить изображение', alt: 'палочки размешиватели'
+  %div
+    %h2 Чай растворимый(фруктовые)
+    %a.highslide{:href => "assets/shop_rastvoriteli.jpg", :onclick => "return hs.expand(this, { slideshowGroup: 'gallery01' } )"}
+      =image_tag 'shop_rastvoriteli.jpg', title: 'Увеличить изображение', alt: 'чай растворимый фруктовый'
+  %div
+    %h2 Горячий шоколад
+    %a.highslide{:href => "assets/shop_rastvoriteli.jpg", :onclick => "return hs.expand(this, { slideshowGroup: 'gallery01' } )"}
+      =image_tag 'shop_rastvoriteli.jpg', title: 'Увеличить изображение', alt: 'горячий шоколад для вендинговых автоматов'
