@@ -17,8 +17,13 @@
   %body
     %section
       = link_to root_url, class: 'home' do
-        CoffeeItalico
-      %p Санкт-Петербург, (812) 756-20-26
+        = image_tag 'logo.png'
+      %p
+        %span
+          (812)
+        758-20-26
+        %br
+        +7 906 276 88 01
       %header
       = render 'shared/nav'
       #main
