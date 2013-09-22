@@ -1,14 +1,52 @@
 %h1 Продажа аксессуаров и ингридиентов для кофейных автоматов и кофемашин
-#shop
-  %div
-    %h2 Стаканы
-    =image_tag 'shop_stakanchiki.jpg', alt: 'стаканчики для вендинга'
-  %div
-    %h2 Размешиватели(палочки)
-    =image_tag 'shop_palochki.jpg', alt: 'палочки размешиватели'
-  %div
-    %h2 Чай растворимый(фруктовые)
-    =image_tag 'shop_rastvoriteli.jpg', alt: 'чай растворимый фруктовый'
-  %div
-    %h2 Горячий шоколад
-    =image_tag 'shop_rastvoriteli.jpg', alt: 'горячий шоколад для вендинговых автоматов'
+
+#tea.shop
+  .tea_row
+    %div
+      %p.name Стаканы
+      =image_tag 'shop_stakanchiki.jpg', alt: 'стаканчики для вендинга'
+      %p.price 78 руб/100 шт
+      %p.sostav
+        стаканчики 160 мл пластик, Италия
+
+    %div
+      %p.name Размешиватели
+      =image_tag 'shop_palochki.jpg', alt: 'палочки размешиватели'
+      %p.price 26 руб/100 шт
+      %p.sostav
+        размешиватели 105 мм Италия
+
+    %div
+      %p.name Горячий шоколад
+      =image_tag 'shokolad.jpg', alt: 'горячий шоколад'
+      %p.price 138 руб/кг
+      %p.sostav
+        дозировка 20 г/150 мл
+    %div
+      %p.name Молочный напиток
+      =image_tag 'moloko.jpg', alt: 'молочный напиток ristora'
+      %p.price 145 руб/кг
+      %p.sostav
+        Ristora TOP, гранулы, дозировка 8 г/150 мл
+
+  .tea_row
+    %div
+      %p.name Чай с ароматом клубники
+      =image_tag 'strawberries.jpg', alt: 'клубника'
+      %p.price 125 руб/кг
+      %p.sostav
+        дозировка 12 г/150 мл
+
+    %div
+      %p.name Чай с ароматом малины
+      =image_tag 'raspberries.jpg', alt: 'малина'
+      %p.price 125 руб/кг
+      %p.sostav
+        дозировка 12 г/150 мл
+
+    %div
+      %p.name Чай с ароматом смородины
+      =image_tag 'currant.jpg', alt: 'смородина'
+      %p.price 125 руб/кг
+      %p.sostav
+        дозировка 12 г/150 мл
