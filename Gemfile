@@ -23,6 +23,11 @@ group :assets do
   gem 'uglifier', '>= 0.3'
 end
 
+group :production do
+  gem 'pg'
+end
+
+
 gem 'jquery-rails'
 gem 'sqlite3', group: :development
 
