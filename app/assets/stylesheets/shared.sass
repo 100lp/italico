@@ -111,7 +111,6 @@ body
         margin: 0
         padding: 0
         font-family: arial
-        margin-bottom: 10px
         color: #4D3F2D
 
       #content
@@ -128,6 +127,11 @@ body
           text-align: justify
           margin-bottom: 10px
           font-size: 14px
+
+        .gray
+          font-family: Arial
+          font-size: 18px
+          color: #888
 
         .nofloat
           float: none
@@ -295,9 +299,18 @@ body
     #footer
       margin-bottom: 50px
       height: 50px
-      a
+
+      div
         float: left
-        font-size: 22px
+
+        > a
+          font-size: 22px
+        > p
+          color: #888
+          font-size: 12px
+          width: 320px
+          text-align: left
+          line-height: 16px
 
       p
         float: right
